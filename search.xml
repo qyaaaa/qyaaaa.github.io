@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux</title>
+    <url>/qyaaaa.github.io/2020/12/25/Linux/</url>
+    <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><blockquote>
+<p>修改主机名称</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hostnamectl set-hostname xxx</span><br><span class="line"># 之后重启服务器即可</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>top 常用的Linux性能分析命令，可以查看各个进程的资源占用状况</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@qy ~]# top</span><br><span class="line">top - 16:08:11 up 22:03,  1 user,  load average: 0.16, 0.14, 0.14</span><br><span class="line">Tasks:  81 total,   1 running,  80 sleeping,   0 stopped,   0 zombie</span><br><span class="line">%Cpu(s):  5.0 us,  1.0 sy,  0.0 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st</span><br><span class="line">KiB Mem :  1882028 total,   856512 free,   481340 used,   544176 buff&#x2F;cache</span><br><span class="line">KiB Swap:  1049596 total,  1049596 free,        0 used.  1245716 avail Mem </span><br><span class="line"></span><br><span class="line">  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                     </span><br><span class="line"> 1364 root      10 -10  135660  16468  10244 S  4.0  0.9  37:30.98 AliYunDun                                   </span><br><span class="line">  465 root      20   0   17900   2080   1508 S  0.3  0.1   0:13.30 assist_daemon                               </span><br><span class="line">  871 root      20   0  574304  17428   6132 S  0.3  0.9   0:07.83 tuned                                       </span><br><span class="line">28010 root      20   0  161996   2164   1552 R  0.3  0.1   0:00.01 top                                         </span><br><span class="line">    1 root      20   0   51768   3928   2584 S  0.0  0.2   0:11.93 systemd                                     </span><br><span class="line">    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                    </span><br><span class="line">    4 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;0:0H                                </span><br><span class="line">    5 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;u2:0                                </span><br><span class="line">    6 root      20   0       0      0      0 S  0.0  0.0   0:04.22 ksoftirqd&#x2F;0                                 </span><br><span class="line">    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration&#x2F;0                                 </span><br><span class="line">    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                      </span><br><span class="line">    9 root      20   0       0      0      0 S  0.0  0.0   0:15.01 rcu_sched                                   </span><br><span class="line">   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain                               </span><br><span class="line">   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.31 watchdog&#x2F;0                                  </span><br><span class="line">   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>创建目录：<code>mkdir [参数] 目录名称</code></strong></p>
+</li>
+<li><p><strong>删除目录：<code>rmdir [选项] [目录]</code></strong></p>
+</li>
+<li><p><strong>创建文件：<code>touch 文件名称</code></strong></p>
+</li>
+<li><p><strong>复制：<code>cp [选项] 源文件 目标文件</code></strong></p>
+</li>
+</ul>
+<ul>
+<li><strong>rm移除文件或目录；mv移动文件或目录</strong></li>
+</ul>
+<ul>
+<li><p><strong>通过进程id查找程序–ps</strong> :   <strong>ps -aux | grep pid</strong></p>
+</li>
+<li><p>**netstat ** :</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntlp   &#x2F;&#x2F;查看当前所有tcp端口·</span><br><span class="line">netstat -ntulp |grep 80   &#x2F;&#x2F;查看所有80端口使用情况·</span><br><span class="line">netstat -an | grep 3306   &#x2F;&#x2F;查看所有3306端口使用情况·</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>cat从第一行正序显示内容；tac从最后一行开始显示内容；head -n20 显示前20行；tail看尾几行</strong></li>
+</ul>
+<ul>
+<li><strong>ps -ef|grep redis 查看redis的进程信息</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux相关</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Nginx</title>
-    <url>/qyaa/2021/01/28/Nginx/</url>
+    <url>/qyaaaa.github.io/2021/01/28/Nginx/</url>
     <content><![CDATA[<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
 <p><strong>学习自狂神说:<a href="https://www.bilibili.com/video/BV1jJ411S7xr">https://www.bilibili.com/video/BV1jJ411S7xr</a></strong></p>
 </blockquote>
@@ -58,83 +106,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux</title>
-    <url>/qyaa/2020/12/25/Linux/</url>
-    <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><blockquote>
-<p>修改主机名称</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hostnamectl set-hostname xxx</span><br><span class="line"># 之后重启服务器即可</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>top 常用的Linux性能分析命令，可以查看各个进程的资源占用状况</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@qy ~]# top</span><br><span class="line">top - 16:08:11 up 22:03,  1 user,  load average: 0.16, 0.14, 0.14</span><br><span class="line">Tasks:  81 total,   1 running,  80 sleeping,   0 stopped,   0 zombie</span><br><span class="line">%Cpu(s):  5.0 us,  1.0 sy,  0.0 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st</span><br><span class="line">KiB Mem :  1882028 total,   856512 free,   481340 used,   544176 buff&#x2F;cache</span><br><span class="line">KiB Swap:  1049596 total,  1049596 free,        0 used.  1245716 avail Mem </span><br><span class="line"></span><br><span class="line">  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                     </span><br><span class="line"> 1364 root      10 -10  135660  16468  10244 S  4.0  0.9  37:30.98 AliYunDun                                   </span><br><span class="line">  465 root      20   0   17900   2080   1508 S  0.3  0.1   0:13.30 assist_daemon                               </span><br><span class="line">  871 root      20   0  574304  17428   6132 S  0.3  0.9   0:07.83 tuned                                       </span><br><span class="line">28010 root      20   0  161996   2164   1552 R  0.3  0.1   0:00.01 top                                         </span><br><span class="line">    1 root      20   0   51768   3928   2584 S  0.0  0.2   0:11.93 systemd                                     </span><br><span class="line">    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                    </span><br><span class="line">    4 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;0:0H                                </span><br><span class="line">    5 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;u2:0                                </span><br><span class="line">    6 root      20   0       0      0      0 S  0.0  0.0   0:04.22 ksoftirqd&#x2F;0                                 </span><br><span class="line">    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration&#x2F;0                                 </span><br><span class="line">    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                      </span><br><span class="line">    9 root      20   0       0      0      0 S  0.0  0.0   0:15.01 rcu_sched                                   </span><br><span class="line">   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain                               </span><br><span class="line">   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.31 watchdog&#x2F;0                                  </span><br><span class="line">   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p><strong>创建目录：<code>mkdir [参数] 目录名称</code></strong></p>
-</li>
-<li><p><strong>删除目录：<code>rmdir [选项] [目录]</code></strong></p>
-</li>
-<li><p><strong>创建文件：<code>touch 文件名称</code></strong></p>
-</li>
-<li><p><strong>复制：<code>cp [选项] 源文件 目标文件</code></strong></p>
-</li>
-</ul>
-<ul>
-<li><strong>rm移除文件或目录；mv移动文件或目录</strong></li>
-</ul>
-<ul>
-<li><p><strong>通过进程id查找程序–ps</strong> :   <strong>ps -aux | grep pid</strong></p>
-</li>
-<li><p>**netstat ** :</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntlp   &#x2F;&#x2F;查看当前所有tcp端口·</span><br><span class="line">netstat -ntulp |grep 80   &#x2F;&#x2F;查看所有80端口使用情况·</span><br><span class="line">netstat -an | grep 3306   &#x2F;&#x2F;查看所有3306端口使用情况·</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>cat从第一行正序显示内容；tac从最后一行开始显示内容；head -n20 显示前20行；tail看尾几行</strong></li>
-</ul>
-<ul>
-<li><strong>ps -ef|grep redis 查看redis的进程信息</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux相关</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git命令</title>
-    <url>/qyaa/2020/10/10/git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h2 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h2><h2 id="配置公钥"><a href="#配置公钥" class="headerlink" title="配置公钥"></a>配置公钥</h2><h3 id="配置你的邮箱和用户名（github或gitee）："><a href="#配置你的邮箱和用户名（github或gitee）：" class="headerlink" title="配置你的邮箱和用户名（github或gitee）："></a><strong>配置你的邮箱和用户名（github或gitee）：</strong></h3><p>$ git config –global user.name “注册时账号的名字”</p>
-<p>$ git config –global user.email “注册时使用的邮箱”</p>
-<h3 id="获取ssh公钥："><a href="#获取ssh公钥：" class="headerlink" title="获取ssh公钥："></a><strong>获取ssh公钥：</strong></h3><p>ssh-keygen -t rsa -C “你注册时的邮箱号”</p>
-<p>敲三次回车生成ssh公钥</p>
-<h3 id="用一下命令查看"><a href="#用一下命令查看" class="headerlink" title="用一下命令查看:"></a><strong>用一下命令查看:</strong></h3><p>cat ~/.ssh/id_rsa.pub</p>
-<p>将获取到的公钥粘贴到你的github或者gitee上的SSH公钥</p>
-<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="直接上传到新创建的仓库"><a href="#直接上传到新创建的仓库" class="headerlink" title="直接上传到新创建的仓库"></a>直接上传到新创建的仓库</h3><p>git init   （初始化git仓库）</p>
-<p>git remote add origin 项目地址</p>
-<p>git add . 添加文件到缓存区（必须加点）</p>
-<p>git commit -m “备注”（引号内填入你的备注）</p>
-<p>git push origin master正式上传到github或gitee的你的仓库中。</p>
-<p>git push origin master -f 强制推送，舍弃线上代码</p>
-<h3 id="先clone在上传"><a href="#先clone在上传" class="headerlink" title="先clone在上传"></a>先clone在上传</h3><p>git add .</p>
-<p>git status  (查看状态)</p>
-<p>git commit -m “xxx”</p>
-<p>git push origin master 正式上传到github或gitee的你的仓库中</p>
-]]></content>
-      <categories>
-        <category>git相关</category>
-      </categories>
-      <tags>
-        <tag>git命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring框架导入</title>
-    <url>/qyaa/2020/05/20/spring/</url>
+    <url>/qyaaaa.github.io/2020/05/20/spring/</url>
     <content><![CDATA[<h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><h2 id="一、常用依赖"><a href="#一、常用依赖" class="headerlink" title="一、常用依赖"></a>一、常用依赖</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-webmvc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.18.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
@@ -178,8 +151,35 @@
       </tags>
   </entry>
   <entry>
+    <title>git命令</title>
+    <url>/qyaaaa.github.io/2020/10/10/git%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h2 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h2><h2 id="配置公钥"><a href="#配置公钥" class="headerlink" title="配置公钥"></a>配置公钥</h2><h3 id="配置你的邮箱和用户名（github或gitee）："><a href="#配置你的邮箱和用户名（github或gitee）：" class="headerlink" title="配置你的邮箱和用户名（github或gitee）："></a><strong>配置你的邮箱和用户名（github或gitee）：</strong></h3><p>$ git config –global user.name “注册时账号的名字”</p>
+<p>$ git config –global user.email “注册时使用的邮箱”</p>
+<h3 id="获取ssh公钥："><a href="#获取ssh公钥：" class="headerlink" title="获取ssh公钥："></a><strong>获取ssh公钥：</strong></h3><p>ssh-keygen -t rsa -C “你注册时的邮箱号”</p>
+<p>敲三次回车生成ssh公钥</p>
+<h3 id="用一下命令查看"><a href="#用一下命令查看" class="headerlink" title="用一下命令查看:"></a><strong>用一下命令查看:</strong></h3><p>cat ~/.ssh/id_rsa.pub</p>
+<p>将获取到的公钥粘贴到你的github或者gitee上的SSH公钥</p>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="直接上传到新创建的仓库"><a href="#直接上传到新创建的仓库" class="headerlink" title="直接上传到新创建的仓库"></a>直接上传到新创建的仓库</h3><p>git init   （初始化git仓库）</p>
+<p>git remote add origin 项目地址</p>
+<p>git add . 添加文件到缓存区（必须加点）</p>
+<p>git commit -m “备注”（引号内填入你的备注）</p>
+<p>git push origin master正式上传到github或gitee的你的仓库中。</p>
+<p>git push origin master -f 强制推送，舍弃线上代码</p>
+<h3 id="先clone在上传"><a href="#先clone在上传" class="headerlink" title="先clone在上传"></a>先clone在上传</h3><p>git add .</p>
+<p>git status  (查看状态)</p>
+<p>git commit -m “xxx”</p>
+<p>git push origin master 正式上传到github或gitee的你的仓库中</p>
+]]></content>
+      <categories>
+        <category>git相关</category>
+      </categories>
+      <tags>
+        <tag>git命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SpringBoot框架整合</title>
-    <url>/qyaa/2020/07/26/springboot/</url>
+    <url>/qyaaaa.github.io/2020/07/26/springboot/</url>
     <content><![CDATA[<h1 id="Springboot"><a href="#Springboot" class="headerlink" title="Springboot"></a>Springboot</h1><blockquote>
 <p>学习自狂神说:<a href="https://www.bilibili.com/video/BV19E411v7Ty">https://www.bilibili.com/video/BV19E411v7Ty</a></p>
 </blockquote>
@@ -217,7 +217,7 @@
   </entry>
   <entry>
     <title>SSM框架整合</title>
-    <url>/qyaa/2020/05/26/ssm/</url>
+    <url>/qyaaaa.github.io/2020/05/26/ssm/</url>
     <content><![CDATA[<h2 id="一、回顾serlvet"><a href="#一、回顾serlvet" class="headerlink" title="一、回顾serlvet"></a>一、回顾serlvet</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 依赖--&gt;</span><br><span class="line">    &lt;dependencies&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;junit&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;junit&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;4.12&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-webmvc&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;5.1.9.RELEASE&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;javax.servlet&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;servlet-api&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.5&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;javax.servlet.jsp&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;jsp-api&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.2&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;javax.servlet&lt;&#x2F;groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;jstl&lt;&#x2F;artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.2&lt;&#x2F;version&gt;</span><br><span class="line">        &lt;&#x2F;dependency&gt;</span><br><span class="line">    &lt;&#x2F;dependencies&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="二、过滤"><a href="#二、过滤" class="headerlink" title="二、过滤"></a>二、过滤</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">        &lt;resources&gt;</span><br><span class="line">            &lt;resource&gt;</span><br><span class="line">                &lt;directory&gt;src&#x2F;main&#x2F;java&lt;&#x2F;directory&gt;</span><br><span class="line">                &lt;includes&gt;</span><br><span class="line">                    &lt;include&gt;**&#x2F;*.properties&lt;&#x2F;include&gt;</span><br><span class="line">                    &lt;include&gt;**&#x2F;*.xml&lt;&#x2F;include&gt;</span><br><span class="line">                &lt;&#x2F;includes&gt;</span><br><span class="line">                &lt;filtering&gt;false&lt;&#x2F;filtering&gt;</span><br><span class="line">            &lt;&#x2F;resource&gt;</span><br><span class="line">            &lt;resource&gt;</span><br><span class="line">                &lt;directory&gt;src&#x2F;main&#x2F;resources&lt;&#x2F;directory&gt;</span><br><span class="line">                &lt;includes&gt;</span><br><span class="line">                    &lt;include&gt;**&#x2F;*.properties&lt;&#x2F;include&gt;</span><br><span class="line">                    &lt;include&gt;**&#x2F;*.xml&lt;&#x2F;include&gt;</span><br><span class="line">                &lt;&#x2F;includes&gt;</span><br><span class="line">                &lt;filtering&gt;false&lt;&#x2F;filtering&gt;</span><br><span class="line">            &lt;&#x2F;resource&gt;</span><br><span class="line">        &lt;&#x2F;resources&gt;</span><br><span class="line">    &lt;&#x2F;build&gt;</span><br></pre></td></tr></table></figure>
@@ -262,7 +262,7 @@
   </entry>
   <entry>
     <title>二叉树遍历</title>
-    <url>/qyaa/2021/01/04/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/</url>
+    <url>/qyaaaa.github.io/2021/01/04/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86/</url>
     <content><![CDATA[<h1 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h1><h2 id="1、二叉树的前序遍历（dfs）"><a href="#1、二叉树的前序遍历（dfs）" class="headerlink" title="1、二叉树的前序遍历（dfs）"></a>1、二叉树的前序遍历（dfs）</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;Integer&gt; preorderTraversal(TreeNode root) &#123;</span><br><span class="line">        List&lt;Integer&gt; list &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        dfs(root,list);</span><br><span class="line">        return list;</span><br><span class="line">    &#125;</span><br><span class="line">    private void dfs(TreeNode root,List&lt;Integer&gt; list)&#123;</span><br><span class="line">        if (root &#x3D;&#x3D; null)&#123;</span><br><span class="line">            return ;</span><br><span class="line">        &#125;</span><br><span class="line">        list.add(root.val);</span><br><span class="line">        dfs(root.left,list);</span><br><span class="line">        dfs(root.right,list);</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="二叉树的前序遍历（bfs）"><a href="#二叉树的前序遍历（bfs）" class="headerlink" title="二叉树的前序遍历（bfs）"></a>二叉树的前序遍历（bfs）</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;Integer&gt; preorderTraversal(TreeNode root) &#123;</span><br><span class="line">        List&lt;Integer&gt; list &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        if (root &#x3D;&#x3D; null)&#123;</span><br><span class="line">            return list;</span><br><span class="line">        &#125;</span><br><span class="line">        Deque&lt;TreeNode&gt; stack &#x3D; new LinkedList&lt;&gt;();</span><br><span class="line">        TreeNode node &#x3D; root;</span><br><span class="line">        while (!stack.isEmpty() || node!&#x3D; null)&#123;</span><br><span class="line">            while (node !&#x3D; null)&#123;</span><br><span class="line">                list.add(node.val);</span><br><span class="line">                stack.push(node);</span><br><span class="line">                node &#x3D; node.left;</span><br><span class="line">            &#125;</span><br><span class="line">            node &#x3D; stack.pop();</span><br><span class="line">            node &#x3D; node.right;</span><br><span class="line">        &#125;</span><br><span class="line">        return list;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -287,7 +287,7 @@
   </entry>
   <entry>
     <title>冒泡排序</title>
-    <url>/qyaa/2020/04/20/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
+    <url>/qyaaaa.github.io/2020/04/20/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><p>冒泡排序是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。</p>
 <p>走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。</p>
 <p>这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。</p>
@@ -319,7 +319,7 @@
   </entry>
   <entry>
     <title>单例模式</title>
-    <url>/qyaa/2020/06/30/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <url>/qyaaaa.github.io/2020/06/30/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><h2 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class Hungry &#123;</span><br><span class="line">    private static final Hungry hungry &#x3D; new Hungry();</span><br><span class="line">    private Hungry()&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    public static Hungry getInstance()&#123;</span><br><span class="line">        return hungry;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="懒汉式-不安全"><a href="#懒汉式-不安全" class="headerlink" title="懒汉式(不安全)"></a>懒汉式(不安全)</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class Lazy &#123;</span><br><span class="line">    private static Lazy lazy;</span><br><span class="line">    private Lazy()&#123;</span><br><span class="line">        System.out.println(Thread.currentThread().getName() + &quot;ok&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    public static Lazy getInstance()&#123;</span><br><span class="line">        if (lazy &#x3D;&#x3D; null)&#123;</span><br><span class="line">            lazy &#x3D; new Lazy();</span><br><span class="line">        &#125;</span><br><span class="line">        return lazy;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">            new Thread(() -&gt; &#123;</span><br><span class="line">                Lazy.getInstance();</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -342,7 +342,7 @@
   </entry>
   <entry>
     <title>秋招面试</title>
-    <url>/qyaa/2020/10/02/%E5%90%8C%E7%9B%BE%E7%A7%91%E6%8A%80%E5%88%9D%E9%9D%A2/</url>
+    <url>/qyaaaa.github.io/2020/10/02/%E5%90%8C%E7%9B%BE%E7%A7%91%E6%8A%80%E5%88%9D%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h2><p><strong>1、计算机网络的五层协议？</strong></p>
 <p><strong>2、http的执行流程？</strong></p>
 <ul>
@@ -382,7 +382,7 @@
   </entry>
   <entry>
     <title>堆排序</title>
-    <url>/qyaa/2020/06/21/%E5%A0%86%E6%8E%92%E5%BA%8F/</url>
+    <url>/qyaaaa.github.io/2020/06/21/%E5%A0%86%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h1 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h1><p>堆排序：堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。</p>
 <p><strong>堆是具有以下性质的完全二叉树：每个结点的值都大于或等于其左右孩子结点的值，称为大顶堆；或者每个结点的值都小于或等于其左右孩子结点的值，称为小顶堆。</strong></p>
 <p><strong>1、 构造初始堆。将给定无序序列构造成一个大顶堆（一般升序采用大顶堆，降序采用小顶堆)。</strong></p>
@@ -401,7 +401,7 @@
   </entry>
   <entry>
     <title>秋招面试</title>
-    <url>/qyaa/2020/10/20/%E5%AD%97%E8%8A%82%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%87%89%E9%9D%A2/</url>
+    <url>/qyaaaa.github.io/2020/10/20/%E5%AD%97%E8%8A%82%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%87%89%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="2020秋招部分面试"><a href="#2020秋招部分面试" class="headerlink" title="2020秋招部分面试"></a>2020秋招部分面试</h2><h4 id="面六：（1h）"><a href="#面六：（1h）" class="headerlink" title="面六：（1h）"></a>面六：（1h）</h4><p><strong>1、Tomcat和Nginx的工作原理？</strong></p>
 <p><strong>2、serlvet是线程安全的吗，serlvet的生命周期？</strong></p>
 <p>不是。xxxx</p>
@@ -457,7 +457,7 @@
   </entry>
   <entry>
     <title>秋招面试</title>
-    <url>/qyaa/2020/09/30/%E5%B0%8F%E9%B1%BC%E6%98%93%E8%BF%9E%E5%87%89%E9%9D%A2/</url>
+    <url>/qyaaaa.github.io/2020/09/30/%E5%B0%8F%E9%B1%BC%E6%98%93%E8%BF%9E%E5%87%89%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="2020秋招部分面试："><a href="#2020秋招部分面试：" class="headerlink" title="2020秋招部分面试："></a>2020秋招部分面试：</h2><h4 id="面五：（40min）"><a href="#面五：（40min）" class="headerlink" title="面五：（40min）"></a>面五：（40min）</h4><p><strong>1、手写快速排序，详见算法篇。</strong></p>
 <p><strong>2、手写双重校验的单例模式。</strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F;jvm类加载机制，静态变量加载方法区，线程公共的</span><br><span class="line">    &#x2F;&#x2F;volatile关键字来保证可见性、有序性写操作先行发生于后面对这个变量的读操作</span><br><span class="line">    private volatile static Singleton singleton;</span><br><span class="line"> </span><br><span class="line">    private Singleton() &#123;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    &#x2F;&#x2F;只初始化一次</span><br><span class="line">    public static Singleton getInstance() &#123;</span><br><span class="line">        if (singleton &#x3D;&#x3D; null) &#123;</span><br><span class="line">            &#x2F;&#x2F;多线程并发解决保证原子性</span><br><span class="line">            synchronized (Singleton.class) &#123;</span><br><span class="line">                if (singleton &#x3D;&#x3D; null) &#123;</span><br><span class="line">                    singleton &#x3D; new Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return singleton;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -500,7 +500,7 @@
   </entry>
   <entry>
     <title>寒窑赋</title>
-    <url>/qyaa/2020/10/20/%E5%AF%92%E7%AA%91%E8%B5%8B/</url>
+    <url>/qyaaaa.github.io/2020/10/20/%E5%AF%92%E7%AA%91%E8%B5%8B/</url>
     <content><![CDATA[<p><strong>天有不测风云，人有旦夕祸福。</strong></p>
 <p><strong>蜈蚣百足，行不及蛇；雄鸡扇翼，飞不过鸦。</strong></p>
 <p><strong>马有千里之程，无骑不能自往；人有冲天之志，非运不能腾达。</strong></p>
@@ -532,7 +532,7 @@
   </entry>
   <entry>
     <title>归并排序</title>
-    <url>/qyaa/2020/06/30/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
+    <url>/qyaaaa.github.io/2020/06/30/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1><p>归并算法的理解比较难，是一种区别于插入算法，选择算法和交换算法的一种独特算法，需要逐步理解。<br><strong>核心思想：归并排序（MERGE-SORT）是利用归并的思想实现的排序方法，该算法采用经典的分治（divide-and-conquer）策略（分治法将问题分(divide)成一些小的问题然后递归求解，而治(conquer)的阶段则将分的阶段得到的各答案”修补”在一起，即分而治之)。</strong></p>
 <p>（1）稳定性</p>
 <ul>
@@ -564,7 +564,7 @@
   </entry>
   <entry>
     <title>快速排序</title>
-    <url>/qyaa/2020/04/20/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</url>
+    <url>/qyaaaa.github.io/2020/04/20/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><p>快速排序的基本思想：通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。</p>
 <h3 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h3><p>快速排序使用分治法来把一个串（list）分为两个子串（sub-lists）。具体算法描述如下：</p>
 <ol>
@@ -593,8 +593,33 @@
       </tags>
   </entry>
   <entry>
+    <title>插入排序</title>
+    <url>/qyaaaa.github.io/2020/04/26/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。</span><br></pre></td></tr></table></figure>
+
+<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a><strong>直接插入排序</strong></h2><p>直接插入排序是一种简单的插入排序法，其基本思想是：把待排序的记录按其关键码值的大小逐个插入到一个已经排好序的有序序列中，直到所有的记录插入完为止，得到一个新的有序序列。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void StraightInsertSort(int[] a) &#123;</span><br><span class="line">        int temp &#x3D; 0,j &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 1;i &lt; a.length;i++)&#123;</span><br><span class="line">            temp &#x3D; a[i];</span><br><span class="line">            j &#x3D; i;</span><br><span class="line">            while(j &gt; 0 &amp;&amp; a[j-1] &gt;&#x3D; temp)&#123;</span><br><span class="line">                a[j] &#x3D; a[j-1];</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            a[j] &#x3D; temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a><strong>二分插入排序</strong></h2><p>将直接插入排序中寻找A[i]的插入位置的方法改为采用折半比较，即可得到折半插入排序算法。在处理A[i]时，A[0]……A[i-1]已经按关键码值排好序。所谓折半比较，就是在插入A[i]时，取A[i-1/2]的关键码值与A[i]的关键码值进行比较，如果A[i]的关键码值小于A[i-1/2]的关键码值，则说明A[i]只能插入A[0]到A[i-1/2]之间，故可以在A[0]到A[i-1/2-1]之间继续使用折半比较；否则只能插入A[i-1/2]到A[i-1]之间，故可以在A[i-1/2+1]到A[i-1]之间继续使用折半比较。如此担负，直到最后能够确定插入的位置为止。一般在A[k]和A[r]之间采用折半，其中间结点为A[k+r/2]，经过一次比较即可排除一半记录，把可能插入的区间减小了一半，故称为折半。执行折半插入排序的前提是文件记录必须按顺序存储。</p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void binaryInsertSort(int array[],int size)  </span><br><span class="line">    &#123;  </span><br><span class="line">        int i,j,k,temp;  </span><br><span class="line">        for(i&#x3D;1;i&lt;size;i++)  </span><br><span class="line">        &#123;  </span><br><span class="line">            temp&#x3D;array[i];  </span><br><span class="line">            if(array[i]&lt;array[0])  </span><br><span class="line">                k&#x3D;0;  </span><br><span class="line">            else  </span><br><span class="line">                k &#x3D; binarySearch(array,0,i,temp);  </span><br><span class="line"></span><br><span class="line">            for(j&#x3D;i;j&gt;k;j--)  </span><br><span class="line">            &#123;  </span><br><span class="line">                array[j]&#x3D;array[j-1];  </span><br><span class="line">            &#125;  </span><br><span class="line">            array[k]&#x3D;temp;  </span><br><span class="line">            System.out.println(Arrays.toString(array));  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a><strong>希尔排序</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">希尔排序(Shell’s Sort)是插入排序的一种又称“缩小增量排序”（Diminshing Increment Sort），是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。该方法因D.L.Shell于1959年提出而得名。</span><br><span class="line">希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void sort(int[] a) &#123;</span><br><span class="line">        int h &#x3D; 1;</span><br><span class="line">        while (h &lt; a.length &#x2F; 3) &#123;</span><br><span class="line">            h &#x3D; h * 3 + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        int temp &#x3D; 0, j &#x3D; 0;</span><br><span class="line">        while (h &gt;&#x3D; 1) &#123;</span><br><span class="line">            for (int i &#x3D; h; i &lt; a.length; i++) &#123;</span><br><span class="line">                temp &#x3D; a[i];</span><br><span class="line">                for (j &#x3D; i; j &gt;&#x3D; h &amp;&amp; a[j - h] &gt;&#x3D; temp; j -&#x3D; h) &#123;</span><br><span class="line">                    a[j] &#x3D; a[j - h];</span><br><span class="line">                &#125;</span><br><span class="line">                a[j] &#x3D; temp;</span><br><span class="line">            &#125;</span><br><span class="line">            h &#x3D; (h - 1) &#x2F; 3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>算法相关</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的博客</title>
-    <url>/qyaa/2020/04/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <url>/qyaaaa.github.io/2020/04/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="我的博客"><a href="#我的博客" class="headerlink" title="我的博客"></a>我的博客</h1><p><strong>为了记录自己的学习经历、复习经历、面试经历、日常生活而创建！</strong></p>
 <p><strong>创建时间：</strong>创建于2020-04-20</p>
 <p><strong>框架：</strong>使用hexo+next主题+node.js,并利用gitee来搭建</p>
@@ -626,33 +651,37 @@
       </tags>
   </entry>
   <entry>
-    <title>插入排序</title>
-    <url>/qyaa/2020/04/26/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。</span><br></pre></td></tr></table></figure>
-
-<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a><strong>直接插入排序</strong></h2><p>直接插入排序是一种简单的插入排序法，其基本思想是：把待排序的记录按其关键码值的大小逐个插入到一个已经排好序的有序序列中，直到所有的记录插入完为止，得到一个新的有序序列。</p>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void StraightInsertSort(int[] a) &#123;</span><br><span class="line">        int temp &#x3D; 0,j &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 1;i &lt; a.length;i++)&#123;</span><br><span class="line">            temp &#x3D; a[i];</span><br><span class="line">            j &#x3D; i;</span><br><span class="line">            while(j &gt; 0 &amp;&amp; a[j-1] &gt;&#x3D; temp)&#123;</span><br><span class="line">                a[j] &#x3D; a[j-1];</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            a[j] &#x3D; temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a><strong>二分插入排序</strong></h2><p>将直接插入排序中寻找A[i]的插入位置的方法改为采用折半比较，即可得到折半插入排序算法。在处理A[i]时，A[0]……A[i-1]已经按关键码值排好序。所谓折半比较，就是在插入A[i]时，取A[i-1/2]的关键码值与A[i]的关键码值进行比较，如果A[i]的关键码值小于A[i-1/2]的关键码值，则说明A[i]只能插入A[0]到A[i-1/2]之间，故可以在A[0]到A[i-1/2-1]之间继续使用折半比较；否则只能插入A[i-1/2]到A[i-1]之间，故可以在A[i-1/2+1]到A[i-1]之间继续使用折半比较。如此担负，直到最后能够确定插入的位置为止。一般在A[k]和A[r]之间采用折半，其中间结点为A[k+r/2]，经过一次比较即可排除一半记录，把可能插入的区间减小了一半，故称为折半。执行折半插入排序的前提是文件记录必须按顺序存储。</p>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void binaryInsertSort(int array[],int size)  </span><br><span class="line">    &#123;  </span><br><span class="line">        int i,j,k,temp;  </span><br><span class="line">        for(i&#x3D;1;i&lt;size;i++)  </span><br><span class="line">        &#123;  </span><br><span class="line">            temp&#x3D;array[i];  </span><br><span class="line">            if(array[i]&lt;array[0])  </span><br><span class="line">                k&#x3D;0;  </span><br><span class="line">            else  </span><br><span class="line">                k &#x3D; binarySearch(array,0,i,temp);  </span><br><span class="line"></span><br><span class="line">            for(j&#x3D;i;j&gt;k;j--)  </span><br><span class="line">            &#123;  </span><br><span class="line">                array[j]&#x3D;array[j-1];  </span><br><span class="line">            &#125;  </span><br><span class="line">            array[k]&#x3D;temp;  </span><br><span class="line">            System.out.println(Arrays.toString(array));  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a><strong>希尔排序</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">希尔排序(Shell’s Sort)是插入排序的一种又称“缩小增量排序”（Diminshing Increment Sort），是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。该方法因D.L.Shell于1959年提出而得名。</span><br><span class="line">希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void sort(int[] a) &#123;</span><br><span class="line">        int h &#x3D; 1;</span><br><span class="line">        while (h &lt; a.length &#x2F; 3) &#123;</span><br><span class="line">            h &#x3D; h * 3 + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        int temp &#x3D; 0, j &#x3D; 0;</span><br><span class="line">        while (h &gt;&#x3D; 1) &#123;</span><br><span class="line">            for (int i &#x3D; h; i &lt; a.length; i++) &#123;</span><br><span class="line">                temp &#x3D; a[i];</span><br><span class="line">                for (j &#x3D; i; j &gt;&#x3D; h &amp;&amp; a[j - h] &gt;&#x3D; temp; j -&#x3D; h) &#123;</span><br><span class="line">                    a[j] &#x3D; a[j - h];</span><br><span class="line">                &#125;</span><br><span class="line">                a[j] &#x3D; temp;</span><br><span class="line">            &#125;</span><br><span class="line">            h &#x3D; (h - 1) &#x2F; 3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-
-
+    <title>秋招面试</title>
+    <url>/qyaaaa.github.io/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
+    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
+<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
+<p><strong>3、Collection和Collections的区别？</strong></p>
+<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
+<p><strong>5、Mysql如何添加一个字段？</strong></p>
+<blockquote>
+<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
+</blockquote>
+<p><strong>6、Mysql分页（limit）？</strong></p>
+<blockquote>
+<p>例如：对product表进行分页查询：</p>
+<p>SELECT * FROM product LIMIT 0,3;</p>
+</blockquote>
+<p><strong>7、Redis的数据类型？</strong></p>
+<p><strong>8、Redis的持久化方式？</strong></p>
+<p><strong>9、Jvm的内存模型？</strong></p>
+<p><strong>10、如何使线程安全？</strong></p>
+<p><strong>11、mybatis如何装配属性？</strong></p>
 ]]></content>
       <categories>
-        <category>算法相关</category>
+        <category>面试相关</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
     <title>数据结构</title>
-    <url>/qyaa/2021/01/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <url>/qyaaaa.github.io/2021/01/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><blockquote>
 <p>常见的数据结构：</p>
 </blockquote>
@@ -862,36 +891,7 @@
   </entry>
   <entry>
     <title>秋招面试</title>
-    <url>/qyaa/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
-    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
-<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
-<p><strong>3、Collection和Collections的区别？</strong></p>
-<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
-<p><strong>5、Mysql如何添加一个字段？</strong></p>
-<blockquote>
-<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
-</blockquote>
-<p><strong>6、Mysql分页（limit）？</strong></p>
-<blockquote>
-<p>例如：对product表进行分页查询：</p>
-<p>SELECT * FROM product LIMIT 0,3;</p>
-</blockquote>
-<p><strong>7、Redis的数据类型？</strong></p>
-<p><strong>8、Redis的持久化方式？</strong></p>
-<p><strong>9、Jvm的内存模型？</strong></p>
-<p><strong>10、如何使线程安全？</strong></p>
-<p><strong>11、mybatis如何装配属性？</strong></p>
-]]></content>
-      <categories>
-        <category>面试相关</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>秋招面试</title>
-    <url>/qyaa/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
+    <url>/qyaaaa.github.io/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
     <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、多线程的死锁以及如何定位死锁问题？</strong></p>
 <p><strong>2、多线程如何防止死锁？</strong></p>
 <p><strong>3、深度优先搜素和广度优先搜索？</strong></p>
@@ -909,7 +909,7 @@
   </entry>
   <entry>
     <title>算法小技巧</title>
-    <url>/qyaa/2021/04/25/%E7%AE%97%E6%B3%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <url>/qyaaaa.github.io/2021/04/25/%E7%AE%97%E6%B3%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="算法小技巧"><a href="#算法小技巧" class="headerlink" title="算法小技巧"></a>算法小技巧</h1><ul>
 <li>将一个10进制数转化为k进制的数</li>
 </ul>
@@ -940,7 +940,7 @@
   </entry>
   <entry>
     <title>线程池</title>
-    <url>/qyaa/2020/06/20/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%88%9B%E5%BB%BA/</url>
+    <url>/qyaaaa.github.io/2020/06/20/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%88%9B%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="线程池的创建"><a href="#线程池的创建" class="headerlink" title="线程池的创建"></a>线程池的创建</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.Executors;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.LinkedBlockingDeque;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.ThreadPoolExecutor;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//获取电脑核数System.out.println(Runtime.getRuntime().availableProcessors());</span></span><br><span class="line">        ThreadPoolExecutor threadPoolExecutor = <span class="keyword">new</span> ThreadPoolExecutor(</span><br><span class="line">                <span class="number">2</span>,</span><br><span class="line">                Runtime.getRuntime().availableProcessors(),<span class="comment">//cpu密集型</span></span><br><span class="line">                <span class="number">3</span>,</span><br><span class="line">                TimeUnit.SECONDS,</span><br><span class="line">                <span class="keyword">new</span> LinkedBlockingDeque&lt;&gt;(<span class="number">3</span>),</span><br><span class="line">                Executors.defaultThreadFactory(), </span><br><span class="line">                <span class="keyword">new</span> ThreadPoolExecutor.AbortPolicy()    <span class="comment">//四种拒绝策略之一</span></span><br><span class="line">        );</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; <span class="number">6</span>;i++)&#123;</span><br><span class="line">                threadPoolExecutor.execute(() -&gt; &#123;</span><br><span class="line">                    System.out.println(Thread.currentThread().getName() + <span class="string">&quot;ok&quot;</span>);</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">            threadPoolExecutor.shutdown();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
@@ -953,7 +953,7 @@
   </entry>
   <entry>
     <title>计算机网络</title>
-    <url>/qyaa/2020/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <url>/qyaaaa.github.io/2020/12/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
     <content><![CDATA[<h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="一、计算机网络的五层模型"><a href="#一、计算机网络的五层模型" class="headerlink" title="一、计算机网络的五层模型"></a>一、计算机网络的五层模型</h2><p><strong>五层模型：物理层、数据链路层、网络层、运输层、应用层。</strong></p>
 <p><strong>应用层</strong>：通过应用进程之间的交互来完成特定的网络应用。（DNS、HTTP、STMP协议等）</p>
 <p><strong>运输层</strong>：负责向两台主机进程之间的通信提供通用的数据传输服务。</p>
@@ -1031,7 +1031,7 @@
   </entry>
   <entry>
     <title>选择排序</title>
-    <url>/qyaa/2020/04/23/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</url>
+    <url>/qyaaaa.github.io/2020/04/23/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<h1 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h1><p>选择排序的基本思想：从头至尾扫描序列，找出最小的一个元素，和第一个元素交换，接着从剩下的元素中继续这种选择和交换方式，最终得到一个有序序列。</p>
 <h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class Test2 &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int[] num &#x3D; &#123;60,80,19,23,56,108&#125;;</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 1. 外层for循环控制选择的轮数</span><br><span class="line">        for(int i&#x3D;0;i&lt;num.length-1;i++)&#123;</span><br><span class="line"></span><br><span class="line">            &#x2F;&#x2F; 2. 内层for循环：控制每轮比较的次数</span><br><span class="line">            for(int j&#x3D;i+1;j&lt;num.length;j++)&#123;</span><br><span class="line">                if(num[i]&gt;num[j])&#123;</span><br><span class="line">                    int temp &#x3D; num[i];</span><br><span class="line">                    num[i]&#x3D;num[j];</span><br><span class="line">                    num[j]&#x3D;temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 遍历数组，输出</span><br><span class="line">        for(int i&#x3D;0;i&lt;num.length;i++)&#123;</span><br><span class="line">            System.out.print(num[i]+&quot;\t&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">19	23	56	60	80	108	</span><br></pre></td></tr></table></figure>
 
@@ -1045,7 +1045,7 @@
   </entry>
   <entry>
     <title>集合</title>
-    <url>/qyaa/2020/08/30/%E9%9B%86%E5%90%88/</url>
+    <url>/qyaaaa.github.io/2020/08/30/%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h4 id="1-ArrayList-和-Vector"><a href="#1-ArrayList-和-Vector" class="headerlink" title="1. ArrayList 和 Vector"></a>1. ArrayList 和 Vector</h4><ul>
 <li>线程安全：Vector 使用了 Synchronized 来实现线程同步，是线程安全的，而 ArrayList 是非线程安全的。</li>
 <li>性能：ArrayList 在性能方面要优于 Vector。</li>
@@ -1087,7 +1087,7 @@
   </entry>
   <entry>
     <title>秋招面试</title>
-    <url>/qyaa/2020/08/26/%E9%9D%A2%E8%AF%951/</url>
+    <url>/qyaaaa.github.io/2020/08/26/%E9%9D%A2%E8%AF%951/</url>
     <content><![CDATA[<h2 id="2020秋招部分面试："><a href="#2020秋招部分面试：" class="headerlink" title="2020秋招部分面试："></a>2020秋招部分面试：</h2><h4 id="面一"><a href="#面一" class="headerlink" title="面一:"></a><strong>面一:</strong></h4><p><strong>1</strong>、ArrayList和LinkedList区别？<br><strong>2</strong>、链表和数组的区别？<br><strong>3</strong>、synchronized和volite区别？<br><strong>4</strong>、MySQL有几种索引？详细说一下？<br><strong>5</strong>、HashMap底层实现原理？<br><strong>6</strong>、说一下哈希表？<br><strong>7</strong>、两个有序数组的合并？复杂度？<br><strong>8</strong>、Java序列化及作用？<br><strong>9</strong>、sychronized可以修饰什们？修饰一个类作用的是什么？<br><strong>10</strong>、ArrayList初始容量及扩容？<br><strong>11</strong>、字节流和字符流的区别？</p>
 <h4 id="面二"><a href="#面二" class="headerlink" title="面二:"></a><strong>面二</strong>:</h4><p><strong>1</strong>、为什么要创建索引？<br><strong>2</strong>、为什么要使用锁？<br><strong>3</strong>、介绍一下公平锁和非公平锁的使用？<br><strong>4</strong>、举例子说一下事务的一致性？<br><strong>5</strong>、说一下redis有哪些类型？运用在哪里<br><strong>6</strong>、说一下token？<br><strong>7</strong>、说一下拦截器、过滤器、ioc的执行顺序？？</p>
 <h4 id="面三："><a href="#面三：" class="headerlink" title="面三："></a><strong>面三：</strong></h4><p><strong>1</strong>、JVM内存模型？<br><strong>2</strong>、gc垃圾回收机制？<br><strong>3</strong>、堆和栈的区别？</p>
@@ -1102,7 +1102,7 @@
   </entry>
   <entry>
     <title>Docker</title>
-    <url>/qyaa/2020/12/16/Docker/</url>
+    <url>/qyaaaa.github.io/2020/12/16/Docker/</url>
     <content><![CDATA[<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><blockquote>
 <p>学习自狂神说:<a href="https://www.bilibili.com/video/BV1og4y1q7M4?p=15">https://www.bilibili.com/video/BV1og4y1q7M4?p=15</a></p>
 </blockquote>
@@ -1308,7 +1308,7 @@
   </entry>
   <entry>
     <title>ElasticSearch</title>
-    <url>/qyaa/2020/12/01/elasticsearch/</url>
+    <url>/qyaaaa.github.io/2020/12/01/elasticsearch/</url>
     <content><![CDATA[<h1 id="ElasticSearch"><a href="#ElasticSearch" class="headerlink" title="ElasticSearch"></a>ElasticSearch</h1><blockquote>
 <p>学习自狂神说:<a href="https://www.bilibili.com/video/BV1Nk4y1R7Hf">https://www.bilibili.com/video/BV1Nk4y1R7Hf</a></p>
 </blockquote>
@@ -1678,7 +1678,7 @@
   </entry>
   <entry>
     <title>Springcloud框架整合</title>
-    <url>/qyaa/2020/08/10/springcloud/</url>
+    <url>/qyaaaa.github.io/2020/08/10/springcloud/</url>
     <content><![CDATA[<h1 id="Springcloud"><a href="#Springcloud" class="headerlink" title="Springcloud"></a>Springcloud</h1><blockquote>
 <p>学习自狂神说:<a href="https://www.bilibili.com/video/BV1F5411J7vK">https://www.bilibili.com/video/BV1F5411J7vK</a></p>
 <p><strong>代码：<a href="https://gitee.com/qyaa/MySpringCloud">https://gitee.com/qyaa/MySpringCloud</a></strong></p>
