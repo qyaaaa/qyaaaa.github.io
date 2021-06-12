@@ -651,6 +651,35 @@
       </tags>
   </entry>
   <entry>
+    <title>秋招面试</title>
+    <url>/qyaa/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
+    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
+<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
+<p><strong>3、Collection和Collections的区别？</strong></p>
+<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
+<p><strong>5、Mysql如何添加一个字段？</strong></p>
+<blockquote>
+<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
+</blockquote>
+<p><strong>6、Mysql分页（limit）？</strong></p>
+<blockquote>
+<p>例如：对product表进行分页查询：</p>
+<p>SELECT * FROM product LIMIT 0,3;</p>
+</blockquote>
+<p><strong>7、Redis的数据类型？</strong></p>
+<p><strong>8、Redis的持久化方式？</strong></p>
+<p><strong>9、Jvm的内存模型？</strong></p>
+<p><strong>10、如何使线程安全？</strong></p>
+<p><strong>11、mybatis如何装配属性？</strong></p>
+]]></content>
+      <categories>
+        <category>面试相关</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据结构</title>
     <url>/qyaa/2021/01/18/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><blockquote>
@@ -861,53 +890,6 @@
       </tags>
   </entry>
   <entry>
-    <title>秋招面试</title>
-    <url>/qyaa/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
-    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
-<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
-<p><strong>3、Collection和Collections的区别？</strong></p>
-<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
-<p><strong>5、Mysql如何添加一个字段？</strong></p>
-<blockquote>
-<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
-</blockquote>
-<p><strong>6、Mysql分页（limit）？</strong></p>
-<blockquote>
-<p>例如：对product表进行分页查询：</p>
-<p>SELECT * FROM product LIMIT 0,3;</p>
-</blockquote>
-<p><strong>7、Redis的数据类型？</strong></p>
-<p><strong>8、Redis的持久化方式？</strong></p>
-<p><strong>9、Jvm的内存模型？</strong></p>
-<p><strong>10、如何使线程安全？</strong></p>
-<p><strong>11、mybatis如何装配属性？</strong></p>
-]]></content>
-      <categories>
-        <category>面试相关</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>秋招面试</title>
-    <url>/qyaa/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、多线程的死锁以及如何定位死锁问题？</strong></p>
-<p><strong>2、多线程如何防止死锁？</strong></p>
-<p><strong>3、深度优先搜素和广度优先搜索？</strong></p>
-<p><strong>4、jvm的内存模型？</strong></p>
-<p><strong>5、jvm调优？</strong></p>
-<p><strong>6、垃圾回收？</strong></p>
-<p><strong>7、linux的查看进程？</strong></p>
-]]></content>
-      <categories>
-        <category>面试相关</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法小技巧</title>
     <url>/qyaa/2021/04/25/%E7%AE%97%E6%B3%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="算法小技巧"><a href="#算法小技巧" class="headerlink" title="算法小技巧"></a>算法小技巧</h1><ul>
@@ -936,6 +918,24 @@
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>秋招面试</title>
+    <url>/qyaa/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、多线程的死锁以及如何定位死锁问题？</strong></p>
+<p><strong>2、多线程如何防止死锁？</strong></p>
+<p><strong>3、深度优先搜素和广度优先搜索？</strong></p>
+<p><strong>4、jvm的内存模型？</strong></p>
+<p><strong>5、jvm调优？</strong></p>
+<p><strong>6、垃圾回收？</strong></p>
+<p><strong>7、linux的查看进程？</strong></p>
+]]></content>
+      <categories>
+        <category>面试相关</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
