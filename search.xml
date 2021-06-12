@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux</title>
-    <url>/qyaa/2020/12/25/Linux/</url>
-    <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><blockquote>
-<p>修改主机名称</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hostnamectl set-hostname xxx</span><br><span class="line"># 之后重启服务器即可</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>top 常用的Linux性能分析命令，可以查看各个进程的资源占用状况</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@qy ~]# top</span><br><span class="line">top - 16:08:11 up 22:03,  1 user,  load average: 0.16, 0.14, 0.14</span><br><span class="line">Tasks:  81 total,   1 running,  80 sleeping,   0 stopped,   0 zombie</span><br><span class="line">%Cpu(s):  5.0 us,  1.0 sy,  0.0 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st</span><br><span class="line">KiB Mem :  1882028 total,   856512 free,   481340 used,   544176 buff&#x2F;cache</span><br><span class="line">KiB Swap:  1049596 total,  1049596 free,        0 used.  1245716 avail Mem </span><br><span class="line"></span><br><span class="line">  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                     </span><br><span class="line"> 1364 root      10 -10  135660  16468  10244 S  4.0  0.9  37:30.98 AliYunDun                                   </span><br><span class="line">  465 root      20   0   17900   2080   1508 S  0.3  0.1   0:13.30 assist_daemon                               </span><br><span class="line">  871 root      20   0  574304  17428   6132 S  0.3  0.9   0:07.83 tuned                                       </span><br><span class="line">28010 root      20   0  161996   2164   1552 R  0.3  0.1   0:00.01 top                                         </span><br><span class="line">    1 root      20   0   51768   3928   2584 S  0.0  0.2   0:11.93 systemd                                     </span><br><span class="line">    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                    </span><br><span class="line">    4 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;0:0H                                </span><br><span class="line">    5 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;u2:0                                </span><br><span class="line">    6 root      20   0       0      0      0 S  0.0  0.0   0:04.22 ksoftirqd&#x2F;0                                 </span><br><span class="line">    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration&#x2F;0                                 </span><br><span class="line">    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                      </span><br><span class="line">    9 root      20   0       0      0      0 S  0.0  0.0   0:15.01 rcu_sched                                   </span><br><span class="line">   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain                               </span><br><span class="line">   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.31 watchdog&#x2F;0                                  </span><br><span class="line">   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p><strong>创建目录：<code>mkdir [参数] 目录名称</code></strong></p>
-</li>
-<li><p><strong>删除目录：<code>rmdir [选项] [目录]</code></strong></p>
-</li>
-<li><p><strong>创建文件：<code>touch 文件名称</code></strong></p>
-</li>
-<li><p><strong>复制：<code>cp [选项] 源文件 目标文件</code></strong></p>
-</li>
-</ul>
-<ul>
-<li><strong>rm移除文件或目录；mv移动文件或目录</strong></li>
-</ul>
-<ul>
-<li><p><strong>通过进程id查找程序–ps</strong> :   <strong>ps -aux | grep pid</strong></p>
-</li>
-<li><p>**netstat ** :</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntlp   &#x2F;&#x2F;查看当前所有tcp端口·</span><br><span class="line">netstat -ntulp |grep 80   &#x2F;&#x2F;查看所有80端口使用情况·</span><br><span class="line">netstat -an | grep 3306   &#x2F;&#x2F;查看所有3306端口使用情况·</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>cat从第一行正序显示内容；tac从最后一行开始显示内容；head -n20 显示前20行；tail看尾几行</strong></li>
-</ul>
-<ul>
-<li><strong>ps -ef|grep redis 查看redis的进程信息</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux相关</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Nginx</title>
     <url>/qyaa/2021/01/28/Nginx/</url>
     <content><![CDATA[<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
@@ -103,6 +55,54 @@
       </categories>
       <tags>
         <tag>中间件相关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux</title>
+    <url>/qyaa/2020/12/25/Linux/</url>
+    <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><blockquote>
+<p>修改主机名称</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hostnamectl set-hostname xxx</span><br><span class="line"># 之后重启服务器即可</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>top 常用的Linux性能分析命令，可以查看各个进程的资源占用状况</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@qy ~]# top</span><br><span class="line">top - 16:08:11 up 22:03,  1 user,  load average: 0.16, 0.14, 0.14</span><br><span class="line">Tasks:  81 total,   1 running,  80 sleeping,   0 stopped,   0 zombie</span><br><span class="line">%Cpu(s):  5.0 us,  1.0 sy,  0.0 ni, 94.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st</span><br><span class="line">KiB Mem :  1882028 total,   856512 free,   481340 used,   544176 buff&#x2F;cache</span><br><span class="line">KiB Swap:  1049596 total,  1049596 free,        0 used.  1245716 avail Mem </span><br><span class="line"></span><br><span class="line">  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                     </span><br><span class="line"> 1364 root      10 -10  135660  16468  10244 S  4.0  0.9  37:30.98 AliYunDun                                   </span><br><span class="line">  465 root      20   0   17900   2080   1508 S  0.3  0.1   0:13.30 assist_daemon                               </span><br><span class="line">  871 root      20   0  574304  17428   6132 S  0.3  0.9   0:07.83 tuned                                       </span><br><span class="line">28010 root      20   0  161996   2164   1552 R  0.3  0.1   0:00.01 top                                         </span><br><span class="line">    1 root      20   0   51768   3928   2584 S  0.0  0.2   0:11.93 systemd                                     </span><br><span class="line">    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                    </span><br><span class="line">    4 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;0:0H                                </span><br><span class="line">    5 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kworker&#x2F;u2:0                                </span><br><span class="line">    6 root      20   0       0      0      0 S  0.0  0.0   0:04.22 ksoftirqd&#x2F;0                                 </span><br><span class="line">    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration&#x2F;0                                 </span><br><span class="line">    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh                                      </span><br><span class="line">    9 root      20   0       0      0      0 S  0.0  0.0   0:15.01 rcu_sched                                   </span><br><span class="line">   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-drain                               </span><br><span class="line">   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.31 watchdog&#x2F;0                                  </span><br><span class="line">   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>创建目录：<code>mkdir [参数] 目录名称</code></strong></p>
+</li>
+<li><p><strong>删除目录：<code>rmdir [选项] [目录]</code></strong></p>
+</li>
+<li><p><strong>创建文件：<code>touch 文件名称</code></strong></p>
+</li>
+<li><p><strong>复制：<code>cp [选项] 源文件 目标文件</code></strong></p>
+</li>
+</ul>
+<ul>
+<li><strong>rm移除文件或目录；mv移动文件或目录</strong></li>
+</ul>
+<ul>
+<li><p><strong>通过进程id查找程序–ps</strong> :   <strong>ps -aux | grep pid</strong></p>
+</li>
+<li><p>**netstat ** :</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -ntlp   &#x2F;&#x2F;查看当前所有tcp端口·</span><br><span class="line">netstat -ntulp |grep 80   &#x2F;&#x2F;查看所有80端口使用情况·</span><br><span class="line">netstat -an | grep 3306   &#x2F;&#x2F;查看所有3306端口使用情况·</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>cat从第一行正序显示内容；tac从最后一行开始显示内容；head -n20 显示前20行；tail看尾几行</strong></li>
+</ul>
+<ul>
+<li><strong>ps -ef|grep redis 查看redis的进程信息</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux相关</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -456,38 +456,6 @@
       </tags>
   </entry>
   <entry>
-    <title>寒窑赋</title>
-    <url>/qyaa/2020/10/20/%E5%AF%92%E7%AA%91%E8%B5%8B/</url>
-    <content><![CDATA[<p><strong>天有不测风云，人有旦夕祸福。</strong></p>
-<p><strong>蜈蚣百足，行不及蛇；雄鸡扇翼，飞不过鸦。</strong></p>
-<p><strong>马有千里之程，无骑不能自往；人有冲天之志，非运不能腾达。</strong></p>
-<p><strong>文章盖世，孔子厄困于陈邦；武略超群，太公垂钓于渭水。</strong></p>
-<p><strong>颜渊命短，实非凶恶之徒；盗跖年长，不是善良之辈。</strong></p>
-<p><strong>尧舜明圣，却生不肖之儿；瞽叟愚顽，反生大孝之子。</strong></p>
-<p><strong>张良原是布衣，萧何曾为县吏；韩信未遇之时，无一日之餐，及至遇行，腰悬三齐玉印。</strong></p>
-<p><strong>楚霸英雄，败于乌江自刎；汉王柔弱，竟有万里江山。</strong></p>
-<p><strong>晏子身短五尺，使楚拜齐名相；诸葛力无缚鸡，出作蜀汉军师。</strong></p>
-<p><strong>李广有射虎之威，到老无封；冯夷有乘龙之才，一生不遇。</strong></p>
-<p><strong>满腹文章，白发竟然不中；才疏学浅，少年及第登科。</strong></p>
-<p><strong>深院宫娥，运退反为妓女；风流妓女，时来配作夫人。</strong></p>
-<p><strong>青春美女，却招愚蠢之夫；俊秀郎君，反配粗丑之妇。</strong></p>
-<p><strong>蛟龙未遇，潜水于鱼鳖之间；君子失时，拱手于小人之下。</strong></p>
-<p><strong>天不得时，日月无光；地不得时，草木不生；</strong></p>
-<p><strong>水不得时，波浪不静；人不得时，限运不通。</strong></p>
-<p><strong>人生在世，富贵不能淫，贫贱不能移。有先贫而后富，有老壮而少衰。</strong></p>
-<p><strong>衣服虽破，常有礼仪之容；面带忧愁，每抱怀安之量。</strong></p>
-<p><strong>时遭不遇，只宜安贫守份；心若不欺，必有扬眉之日。</strong></p>
-<p><strong>初贫君子，天然骨格生成；乍富小人，不脱贫寒肌体。</strong></p>
-<p><strong>福禄岂能强求，富贵谁人不欲。</strong></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>秋招面试</title>
     <url>/qyaa/2020/09/30/%E5%B0%8F%E9%B1%BC%E6%98%93%E8%BF%9E%E5%87%89%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="2020秋招部分面试："><a href="#2020秋招部分面试：" class="headerlink" title="2020秋招部分面试："></a>2020秋招部分面试：</h2><h4 id="面五：（40min）"><a href="#面五：（40min）" class="headerlink" title="面五：（40min）"></a>面五：（40min）</h4><p><strong>1、手写快速排序，详见算法篇。</strong></p>
@@ -528,6 +496,38 @@
       </categories>
       <tags>
         <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>寒窑赋</title>
+    <url>/qyaa/2020/10/20/%E5%AF%92%E7%AA%91%E8%B5%8B/</url>
+    <content><![CDATA[<p><strong>天有不测风云，人有旦夕祸福。</strong></p>
+<p><strong>蜈蚣百足，行不及蛇；雄鸡扇翼，飞不过鸦。</strong></p>
+<p><strong>马有千里之程，无骑不能自往；人有冲天之志，非运不能腾达。</strong></p>
+<p><strong>文章盖世，孔子厄困于陈邦；武略超群，太公垂钓于渭水。</strong></p>
+<p><strong>颜渊命短，实非凶恶之徒；盗跖年长，不是善良之辈。</strong></p>
+<p><strong>尧舜明圣，却生不肖之儿；瞽叟愚顽，反生大孝之子。</strong></p>
+<p><strong>张良原是布衣，萧何曾为县吏；韩信未遇之时，无一日之餐，及至遇行，腰悬三齐玉印。</strong></p>
+<p><strong>楚霸英雄，败于乌江自刎；汉王柔弱，竟有万里江山。</strong></p>
+<p><strong>晏子身短五尺，使楚拜齐名相；诸葛力无缚鸡，出作蜀汉军师。</strong></p>
+<p><strong>李广有射虎之威，到老无封；冯夷有乘龙之才，一生不遇。</strong></p>
+<p><strong>满腹文章，白发竟然不中；才疏学浅，少年及第登科。</strong></p>
+<p><strong>深院宫娥，运退反为妓女；风流妓女，时来配作夫人。</strong></p>
+<p><strong>青春美女，却招愚蠢之夫；俊秀郎君，反配粗丑之妇。</strong></p>
+<p><strong>蛟龙未遇，潜水于鱼鳖之间；君子失时，拱手于小人之下。</strong></p>
+<p><strong>天不得时，日月无光；地不得时，草木不生；</strong></p>
+<p><strong>水不得时，波浪不静；人不得时，限运不通。</strong></p>
+<p><strong>人生在世，富贵不能淫，贫贱不能移。有先贫而后富，有老壮而少衰。</strong></p>
+<p><strong>衣服虽破，常有礼仪之容；面带忧愁，每抱怀安之量。</strong></p>
+<p><strong>时遭不遇，只宜安贫守份；心若不欺，必有扬眉之日。</strong></p>
+<p><strong>初贫君子，天然骨格生成；乍富小人，不脱贫寒肌体。</strong></p>
+<p><strong>福禄岂能强求，富贵谁人不欲。</strong></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -593,31 +593,6 @@
       </tags>
   </entry>
   <entry>
-    <title>插入排序</title>
-    <url>/qyaa/2020/04/26/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。</span><br></pre></td></tr></table></figure>
-
-<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a><strong>直接插入排序</strong></h2><p>直接插入排序是一种简单的插入排序法，其基本思想是：把待排序的记录按其关键码值的大小逐个插入到一个已经排好序的有序序列中，直到所有的记录插入完为止，得到一个新的有序序列。</p>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void StraightInsertSort(int[] a) &#123;</span><br><span class="line">        int temp &#x3D; 0,j &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 1;i &lt; a.length;i++)&#123;</span><br><span class="line">            temp &#x3D; a[i];</span><br><span class="line">            j &#x3D; i;</span><br><span class="line">            while(j &gt; 0 &amp;&amp; a[j-1] &gt;&#x3D; temp)&#123;</span><br><span class="line">                a[j] &#x3D; a[j-1];</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            a[j] &#x3D; temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a><strong>二分插入排序</strong></h2><p>将直接插入排序中寻找A[i]的插入位置的方法改为采用折半比较，即可得到折半插入排序算法。在处理A[i]时，A[0]……A[i-1]已经按关键码值排好序。所谓折半比较，就是在插入A[i]时，取A[i-1/2]的关键码值与A[i]的关键码值进行比较，如果A[i]的关键码值小于A[i-1/2]的关键码值，则说明A[i]只能插入A[0]到A[i-1/2]之间，故可以在A[0]到A[i-1/2-1]之间继续使用折半比较；否则只能插入A[i-1/2]到A[i-1]之间，故可以在A[i-1/2+1]到A[i-1]之间继续使用折半比较。如此担负，直到最后能够确定插入的位置为止。一般在A[k]和A[r]之间采用折半，其中间结点为A[k+r/2]，经过一次比较即可排除一半记录，把可能插入的区间减小了一半，故称为折半。执行折半插入排序的前提是文件记录必须按顺序存储。</p>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void binaryInsertSort(int array[],int size)  </span><br><span class="line">    &#123;  </span><br><span class="line">        int i,j,k,temp;  </span><br><span class="line">        for(i&#x3D;1;i&lt;size;i++)  </span><br><span class="line">        &#123;  </span><br><span class="line">            temp&#x3D;array[i];  </span><br><span class="line">            if(array[i]&lt;array[0])  </span><br><span class="line">                k&#x3D;0;  </span><br><span class="line">            else  </span><br><span class="line">                k &#x3D; binarySearch(array,0,i,temp);  </span><br><span class="line"></span><br><span class="line">            for(j&#x3D;i;j&gt;k;j--)  </span><br><span class="line">            &#123;  </span><br><span class="line">                array[j]&#x3D;array[j-1];  </span><br><span class="line">            &#125;  </span><br><span class="line">            array[k]&#x3D;temp;  </span><br><span class="line">            System.out.println(Arrays.toString(array));  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a><strong>希尔排序</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">希尔排序(Shell’s Sort)是插入排序的一种又称“缩小增量排序”（Diminshing Increment Sort），是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。该方法因D.L.Shell于1959年提出而得名。</span><br><span class="line">希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void sort(int[] a) &#123;</span><br><span class="line">        int h &#x3D; 1;</span><br><span class="line">        while (h &lt; a.length &#x2F; 3) &#123;</span><br><span class="line">            h &#x3D; h * 3 + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        int temp &#x3D; 0, j &#x3D; 0;</span><br><span class="line">        while (h &gt;&#x3D; 1) &#123;</span><br><span class="line">            for (int i &#x3D; h; i &lt; a.length; i++) &#123;</span><br><span class="line">                temp &#x3D; a[i];</span><br><span class="line">                for (j &#x3D; i; j &gt;&#x3D; h &amp;&amp; a[j - h] &gt;&#x3D; temp; j -&#x3D; h) &#123;</span><br><span class="line">                    a[j] &#x3D; a[j - h];</span><br><span class="line">                &#125;</span><br><span class="line">                a[j] &#x3D; temp;</span><br><span class="line">            &#125;</span><br><span class="line">            h &#x3D; (h - 1) &#x2F; 3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>算法相关</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我的博客</title>
     <url>/qyaa/2020/04/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="我的博客"><a href="#我的博客" class="headerlink" title="我的博客"></a>我的博客</h1><p><strong>为了记录自己的学习经历、复习经历、面试经历、日常生活而创建！</strong></p>
@@ -651,32 +626,28 @@
       </tags>
   </entry>
   <entry>
-    <title>秋招面试</title>
-    <url>/qyaa/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
-    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
-<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
-<p><strong>3、Collection和Collections的区别？</strong></p>
-<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
-<p><strong>5、Mysql如何添加一个字段？</strong></p>
-<blockquote>
-<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
-</blockquote>
-<p><strong>6、Mysql分页（limit）？</strong></p>
-<blockquote>
-<p>例如：对product表进行分页查询：</p>
-<p>SELECT * FROM product LIMIT 0,3;</p>
-</blockquote>
-<p><strong>7、Redis的数据类型？</strong></p>
-<p><strong>8、Redis的持久化方式？</strong></p>
-<p><strong>9、Jvm的内存模型？</strong></p>
-<p><strong>10、如何使线程安全？</strong></p>
-<p><strong>11、mybatis如何装配属性？</strong></p>
+    <title>插入排序</title>
+    <url>/qyaa/2020/04/26/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。</span><br></pre></td></tr></table></figure>
+
+<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a><strong>直接插入排序</strong></h2><p>直接插入排序是一种简单的插入排序法，其基本思想是：把待排序的记录按其关键码值的大小逐个插入到一个已经排好序的有序序列中，直到所有的记录插入完为止，得到一个新的有序序列。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void StraightInsertSort(int[] a) &#123;</span><br><span class="line">        int temp &#x3D; 0,j &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 1;i &lt; a.length;i++)&#123;</span><br><span class="line">            temp &#x3D; a[i];</span><br><span class="line">            j &#x3D; i;</span><br><span class="line">            while(j &gt; 0 &amp;&amp; a[j-1] &gt;&#x3D; temp)&#123;</span><br><span class="line">                a[j] &#x3D; a[j-1];</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            a[j] &#x3D; temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二分插入排序"><a href="#二分插入排序" class="headerlink" title="二分插入排序"></a><strong>二分插入排序</strong></h2><p>将直接插入排序中寻找A[i]的插入位置的方法改为采用折半比较，即可得到折半插入排序算法。在处理A[i]时，A[0]……A[i-1]已经按关键码值排好序。所谓折半比较，就是在插入A[i]时，取A[i-1/2]的关键码值与A[i]的关键码值进行比较，如果A[i]的关键码值小于A[i-1/2]的关键码值，则说明A[i]只能插入A[0]到A[i-1/2]之间，故可以在A[0]到A[i-1/2-1]之间继续使用折半比较；否则只能插入A[i-1/2]到A[i-1]之间，故可以在A[i-1/2+1]到A[i-1]之间继续使用折半比较。如此担负，直到最后能够确定插入的位置为止。一般在A[k]和A[r]之间采用折半，其中间结点为A[k+r/2]，经过一次比较即可排除一半记录，把可能插入的区间减小了一半，故称为折半。执行折半插入排序的前提是文件记录必须按顺序存储。</p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void binaryInsertSort(int array[],int size)  </span><br><span class="line">    &#123;  </span><br><span class="line">        int i,j,k,temp;  </span><br><span class="line">        for(i&#x3D;1;i&lt;size;i++)  </span><br><span class="line">        &#123;  </span><br><span class="line">            temp&#x3D;array[i];  </span><br><span class="line">            if(array[i]&lt;array[0])  </span><br><span class="line">                k&#x3D;0;  </span><br><span class="line">            else  </span><br><span class="line">                k &#x3D; binarySearch(array,0,i,temp);  </span><br><span class="line"></span><br><span class="line">            for(j&#x3D;i;j&gt;k;j--)  </span><br><span class="line">            &#123;  </span><br><span class="line">                array[j]&#x3D;array[j-1];  </span><br><span class="line">            &#125;  </span><br><span class="line">            array[k]&#x3D;temp;  </span><br><span class="line">            System.out.println(Arrays.toString(array));  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a><strong>希尔排序</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">希尔排序(Shell’s Sort)是插入排序的一种又称“缩小增量排序”（Diminshing Increment Sort），是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。该方法因D.L.Shell于1959年提出而得名。</span><br><span class="line">希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现:"></a>代码实现:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static void sort(int[] a) &#123;</span><br><span class="line">        int h &#x3D; 1;</span><br><span class="line">        while (h &lt; a.length &#x2F; 3) &#123;</span><br><span class="line">            h &#x3D; h * 3 + 1;</span><br><span class="line">        &#125;</span><br><span class="line">        int temp &#x3D; 0, j &#x3D; 0;</span><br><span class="line">        while (h &gt;&#x3D; 1) &#123;</span><br><span class="line">            for (int i &#x3D; h; i &lt; a.length; i++) &#123;</span><br><span class="line">                temp &#x3D; a[i];</span><br><span class="line">                for (j &#x3D; i; j &gt;&#x3D; h &amp;&amp; a[j - h] &gt;&#x3D; temp; j -&#x3D; h) &#123;</span><br><span class="line">                    a[j] &#x3D; a[j - h];</span><br><span class="line">                &#125;</span><br><span class="line">                a[j] &#x3D; temp;</span><br><span class="line">            &#125;</span><br><span class="line">            h &#x3D; (h - 1) &#x2F; 3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
-        <category>面试相关</category>
+        <category>算法相关</category>
       </categories>
       <tags>
-        <tag>面试</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -890,6 +861,53 @@
       </tags>
   </entry>
   <entry>
+    <title>秋招面试</title>
+    <url>/qyaa/2020/10/18/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E/</url>
+    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、Map的遍历方式？</strong></p>
+<p><strong>2、ArrayList和LinkedList的区别？</strong></p>
+<p><strong>3、Collection和Collections的区别？</strong></p>
+<p><strong>4、ConcurrentHashMap实现线程安全的方式？</strong></p>
+<p><strong>5、Mysql如何添加一个字段？</strong></p>
+<blockquote>
+<p>ALTER table tab_xxx add xxx_num int(5) not Null DEFAULT ‘0’ COMMENT ‘xxxx’;<br>ALTER table tab_xxx ADD xxx_id bigint(20) NOT NULL COMMENT ‘xxxID’;<br>ALTER table tab_xxx ADD xxx_name varchar(20) NOT NULL COMMENT ‘xxx名称’;</p>
+</blockquote>
+<p><strong>6、Mysql分页（limit）？</strong></p>
+<blockquote>
+<p>例如：对product表进行分页查询：</p>
+<p>SELECT * FROM product LIMIT 0,3;</p>
+</blockquote>
+<p><strong>7、Redis的数据类型？</strong></p>
+<p><strong>8、Redis的持久化方式？</strong></p>
+<p><strong>9、Jvm的内存模型？</strong></p>
+<p><strong>10、如何使线程安全？</strong></p>
+<p><strong>11、mybatis如何装配属性？</strong></p>
+]]></content>
+      <categories>
+        <category>面试相关</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>秋招面试</title>
+    <url>/qyaa/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、多线程的死锁以及如何定位死锁问题？</strong></p>
+<p><strong>2、多线程如何防止死锁？</strong></p>
+<p><strong>3、深度优先搜素和广度优先搜索？</strong></p>
+<p><strong>4、jvm的内存模型？</strong></p>
+<p><strong>5、jvm调优？</strong></p>
+<p><strong>6、垃圾回收？</strong></p>
+<p><strong>7、linux的查看进程？</strong></p>
+]]></content>
+      <categories>
+        <category>面试相关</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法小技巧</title>
     <url>/qyaa/2021/04/25/%E7%AE%97%E6%B3%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="算法小技巧"><a href="#算法小技巧" class="headerlink" title="算法小技巧"></a>算法小技巧</h1><ul>
@@ -918,24 +936,6 @@
       </categories>
       <tags>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>秋招面试</title>
-    <url>/qyaa/2020/10/24/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%8D%8E%E4%BA%8C%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h1><p><strong>1、多线程的死锁以及如何定位死锁问题？</strong></p>
-<p><strong>2、多线程如何防止死锁？</strong></p>
-<p><strong>3、深度优先搜素和广度优先搜索？</strong></p>
-<p><strong>4、jvm的内存模型？</strong></p>
-<p><strong>5、jvm调优？</strong></p>
-<p><strong>6、垃圾回收？</strong></p>
-<p><strong>7、linux的查看进程？</strong></p>
-]]></content>
-      <categories>
-        <category>面试相关</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
       </tags>
   </entry>
   <entry>
